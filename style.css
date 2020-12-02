@@ -25,7 +25,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
 .active a{
   color:#026C0A;
   font-family: futura-pt-bold, sans-serif;
-  font-size:18px;
+  font-size:1.3em;
 }
 /*--BACKGROUND--*/
 .bg, .bg-about,.bg-main{
@@ -62,11 +62,11 @@ header {
   cursor: pointer;
   grid-area:logo;
   padding:10px 0;
-  width:80px;
+  width:100px;
 }
 
 li, a, button{
-  font-size: 20px;
+  font-size: 1.2em;
   color: #2B2B2B;
   text-decoration: none;
   text-align: center;
@@ -102,15 +102,16 @@ li, a, button{
 }
 li.button{
   margin: 5px;
-  padding-top: 7px;
+  padding: 9px;
 }
+
 .cta-1{
   list-style: none ;
   display: flex;
 }
 button,.button {
-  width: 130px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   text-align: center;
   background-color: rgba(249, 194, 9, 1);
   box-shadow: 1px 1px  #2E2300;
@@ -136,8 +137,7 @@ button:hover,.button:hover {
    display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin: 100px 150px 150px;
 }
 
 /*--landing title--*/
@@ -146,7 +146,6 @@ button:hover,.button:hover {
   float:left; 
   flex-direction: column;
   line-height: 0.8;
-  margin: 0 100px;
 }
 .title h1{padding-bottom: 30px;}
 .title ul{
@@ -157,30 +156,24 @@ button:hover,.button:hover {
 
 /*--slideshow--*/
 .trigger {display: none;}
-
-.slider, .slider-wrapper {
+.slider,.slider-wrapper {
   position: relative;
   grid-area: image;
+  margin-left: 50px;
   width:100%;
-  margin-top:20px;
-  margin-right: auto;
-  height: 480px;
-  align-items: center;
-  justify-content: center;
+  height: 500px;
 }
 
 .slide {
   position: absolute;
-  height: 100%;
-  right:100px;
-  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  transition: 0.5s ease-in;
 }
 
 .slide-img {
   grid-area: image;
-  width: 100%;
+  width: 90%;
   object-fit: fill;
   display: block;
   margin: 0 auto;
@@ -197,7 +190,10 @@ button:hover,.button:hover {
 .slider-nav {
   width: 100%;
   text-align: center;
+  align-content: center;
   position: relative;
+  top: -40px;
+  margin-left: 50px;
 }
 
 /*switch toggle radio buttons*/
@@ -215,7 +211,6 @@ button:hover,.button:hover {
   transition: background-color .25s, color .25s ease-in-out;
   margin:5px;
   position:relative;
-  top:-80px;
   align-content: center;
   z-index:8000;
 }
@@ -237,6 +232,7 @@ button:hover,.button:hover {
   text-align: center;
   padding: 40px 250px 0;
 }
+
 
 /*center main body*/
 .center-body,.right-body{
@@ -264,15 +260,11 @@ button:hover,.button:hover {
   box-shadow: 15px 15px #0E3101;
 }
 
-.center-body p{
+.right-body p,.center-body p{
   top:0;
-  padding-left: 150px;
-}
-
-.right-body p,.right-body li{
-  top:0;
-  padding-left: 100px; 
+  margin-left: 100px; 
   margin-right: 100px;
+  font-size: 1.5em;
 }
 
 /*mission part*/
@@ -281,7 +273,7 @@ button:hover,.button:hover {
   background-color:#E0ECE4;
 }
 .mission h4{
-  font-size: 30px;
+  font-size: 2.5em;
   margin: 20px;
 }
 /*align icons in the center*/
@@ -296,6 +288,7 @@ button:hover,.button:hover {
 .mission-icons p{
   margin-left: 100px;
   margin-right: 100px;
+  font-size: 1.3em;
 }
 
 /*----CAMPAIGN----*/
@@ -313,7 +306,7 @@ button:hover,.button:hover {
 
 .campaign-tabs label{
   font-weight: 400;
-  font-size:24px;
+  font-size:1.6em;
 	display: block;
 	float: left;
 	cursor: pointer;
@@ -339,7 +332,7 @@ button:hover,.button:hover {
   position: relative;
   top:-5px;
   background-color:#337146;
-  margin:0px 100px;
+  margin:100px;
   border-radius: 15px;
 }
 /*search,filter,sort*/
@@ -353,12 +346,13 @@ button:hover,.button:hover {
 }
 #search{
   background-color:#F4E9C5;
-  border-radius: 15px;
+  border-radius: 40px;
   border: 2px solid #F9C209;
   flex:3; /*expand search bar*/
-  font-size:16px;
+  font-size:1.3em;
   margin-right: 20px;
   margin-left:40px;
+  padding: 0.5em 1em;
 }
 #search,.select{
   margin-top:30px;
@@ -377,27 +371,27 @@ select{
   text-overflow: '';
   appearance: none;
   background-color:#F4E9C5;
-  font-size:13px;
+  font-size:1.3em;
   padding: 0.5em 1.5em;
   border-radius: 5px;
   border-color:  #F9C209;
   cursor: pointer;
 }
 .sort,.filter {
-   position: relative;
-   height: 2em;
-   border-radius: 10px;
+  position: relative;
+  height: 2em;
+  border-radius: 10px;
 }
 
 /*add arrow as signifier*/
 .sort::after,.filter::after {
-   content: '\25BC';
-   font-size:10px;
+  content: '\25BC';
+  font-size:10px;
   position: relative;
-   left:-25px;
-   cursor:pointer;
-   pointer-events:none;
-   transition:.25s all ease;
+  left:-25px;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
 }
 .sort:hover::after,.filter:hover::after {
    color: #F9C209;
@@ -412,7 +406,6 @@ select::-ms-expand{
   flex-wrap: wrap;
   justify-content:space-around;
   padding: 40px 20px;
-  
 }
 .article img{
   width:100%;
@@ -420,7 +413,7 @@ select::-ms-expand{
 }
 /*each tab*/
 .art p{padding: 30px;}
-.art h5{font-size: 30px;}
+.art h5{font-size: 2.5em}
 .art{
   background:#F4E9C5;
   border-radius: 15px;
@@ -440,9 +433,10 @@ select::-ms-expand{
 /*"more" button*/
 .butn{
   font-weight:500;
-  width: 70px;
+  width: 90px;
   background-color:#E5CE83;
   margin-bottom: 30px;
+  font-size: 1.5em;
 }
 /*separate from other yellow buttons*/
 .art button:hover, .art button::selection{
@@ -460,7 +454,7 @@ select::-ms-expand{
 .contain{
   grid-area: 2/1/2/7;
   display: flex;
-  margin: 150px;
+  margin: 100px;
 }
 /* forms in volunteer and donate*/
 form{
@@ -487,7 +481,7 @@ form{
   box-shadow: 1px 1px  #2E2300;
   border-radius: 8px;
   cursor: pointer;
-  font-size:18px;
+  font-size:24px;
   transition: all 0.3s ease 0s;
   margin:0 auto;
 }
@@ -497,6 +491,7 @@ form{
 /*----VOLUNTEER----*/
 .why-title{padding-right:100px;}
 .why-title, .how-title{text-align: left;}
+.why-title p, .how-title p{font-size: 24px;}
 
 /*separate to 2 column*/
 .list{
@@ -523,7 +518,7 @@ form{
   display: flex;
   flex-direction: row;
   margin: 20px 50px;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
@@ -542,7 +537,7 @@ form{
 }
 /* "Join us with"*/
 .or h4{
-  font-size:24px;
+  font-size: 2em;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   position: relative;
@@ -585,13 +580,13 @@ ion-icon:hover{opacity: 0.7;}
 .samp input {display: none;} /*hide radio buttons*/
 .samp label{
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
 	display: block;
 	float: left;
 	cursor: pointer;
-	width: 160px;
+	width: 200px;
 	margin: 5px;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 10px;
 	background: #F5E9C1;
 	color: #767676;
@@ -625,13 +620,13 @@ ion-icon:hover{opacity: 0.7;}
 	display: block;
 	float: left;
 	cursor: pointer;
-	width: 45px;
+	width: 60px;
 	margin: 5px;
-	padding: 12px 5px;
+	padding: 15px 5px;
 	border-radius: 10px;
 	background: #F5E9C1;
 	color: #767676;
-	font-size: 18px;
+	font-size: 24px;
 	text-align: center;
 	line-height: 1;
 	transition: .2s;
@@ -649,8 +644,8 @@ ion-icon:hover{opacity: 0.7;}
   border-radius: 10px;
   text-align:center;
   border:none;
-  height: 40px;
-  font-size: 18px;
+  height: 55px;
+  font-size: 24px;
   width: 100px;
 }
 
@@ -687,7 +682,7 @@ input[type=number] {
 
 /* form fill-in */
 .fill{  
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   height: 40px;
   width:100%;
   position: relative;
@@ -697,7 +692,7 @@ input[type=number] {
   height:25px; /*adjust height between input and border bottom*/
   width:100%;
   border:none;
-  font-size: 18px;
+  font-size: 24px;
   border-bottom: 2px solid black;
   background-color: transparent;
   font-weight: 300;
@@ -713,7 +708,7 @@ input[type=number] {
   bottom:20px;
   left:0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   transition:0.2s ease-in-out;
   outline:none; /*remove border when select input*/
   border: none;
@@ -734,25 +729,24 @@ input[type=number] {
 .card-details > .fill{
 margin-left: 20px;
 }
-
-
-
+.don > .btn{margin-bottom: 50px;}
 /*---FOOTER---*/
 .footer{
   grid-area:footer;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: center;
   padding: 40px 100px 50px;
   text-align: left;
 }
 
 .footer h3{
-  font-size: 16px;
-    color:#004105;
+  font-size: 24px;
+  color:#004105;
   font-weight: 400;
 }
-.footer p{font-size:13px;}
+.footer p{font-size:20px;}
 #nav-toggle{display:none;} /*doesn't show up normally*/
 
 /*----TABLET----*/
@@ -782,8 +776,8 @@ margin-left: 20px;
     font-size: 30px;
   }
   .cta > .button{
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
     margin: 5px;
   }
   div.cta{
@@ -882,16 +876,17 @@ margin-left: 20px;
 
   /*----LANDING----*/
   .body{
-    margin-top: 0px;
-    margin-bottom: 100px;
-    flex-direction: column; /*content cascade down instead of flex*/
+    margin: 50px 100px 50px;
+   flex-direction: column; /*content cascade down instead of flex*/
   }
 
   /*--landing title--*/
-  .title{text-align: center;}
-  .title h1{
-    padding-bottom: 30px;  
+  .title{
+    margin-bottom: 50px;
+    text-align: center;
   }
+
+  .title h1{ padding-bottom: 30px; }
   .title ul{
     padding-top: 50px;
     align-items: center;
@@ -899,17 +894,14 @@ margin-left: 20px;
   }
 
   /*--slideshow--*/
-  .slider-wrapper{
+  .slider, .slider-wrapper {
+    width: 100%;
     margin: 0 auto;
-    width: 90%;
-  }
-  .slider{
-    margin-top: 40px;
     justify-content: center;
   }
-  .slider-nav__label {
-    bottom: 0px;
-    top:-110px;
+  .slider-nav{
+    margin:0;
+    top:0px;
   }
 
   /*----ABOUT----*/
@@ -957,14 +949,10 @@ margin-left: 20px;
   .campaign-content{margin:0px 20px;}
 
   #search{
-    font-size:16px;
-    margin-right: 20px;
-    margin-left:20px;
+    margin-right: 30px;
+    margin-left:30px;
   }
-  #search,.select{margin-top:30px;}
-  .select{margin-right:0;}
-  select{padding: 0.3em 0.5em;}
-
+  select{padding: 10px 20px;}
   .sort::after,.filter::after {
     font-size:10px;
     left:-20px;
@@ -990,10 +978,13 @@ margin-left: 20px;
     display: flex;
     flex-direction: column; /*column layout instead of row*/
     text-align:center;
+    margin: 70px 150px 70px;
   }
-
-  .content{
-    padding-bottom: 40px;
+  .fill input,.fill label {font-size: 18px;}
+  .content{ padding-bottom: 40px;}
+  .btn{
+    font-size: 20px;
+    width: 80px;
   }
 
   /*----VOLUNTEER----*/
@@ -1001,26 +992,28 @@ margin-left: 20px;
   .why-title h6, .how-title h6{text-align: center;}
 
   /* register form in volunteer page*/
+  .register h4{font-size: 24px;}
+  .register p {font-size: 16px;}
   .register .icons{margin-bottom: 30px;}
+  .or p{font-size: 18px;}
+  .or h4{font-size: 20px;}
   .bg-main, .bg, .bg-about{
     background-image: url('Images/bg-about-pic1.png');
   }
 
   /*---DONATE---*/
+  .samp label, .sample label, .own input{font-size: 18px;}
+  .own input{margin-top: 5px;}
   .donate-content{
     display:flex;
     flex-direction: column;
   }
-  .don > .btn{margin-bottom: 30px;}
-
+  .don > .btn{margin-bottom: 50px;}
 }
 
 /*----PHONE----*/
-
 @media screen and (max-width: 480px){  
-  div.cta{
-    bottom: 100px;
-  }
+  div.cta{bottom: 100px;}
 
   .cta > .button{
     width: 100px;
@@ -1031,25 +1024,29 @@ margin-left: 20px;
   .nav-bar li{margin: 20px;}
 
   /*---LANDING---*/
+  .title p{font-size: 16px;}
   .body{
     display: flex;
     flex-direction: column;
-    margin-top:0;
+    margin:0px 0 50px;
   }
   .title{
     text-align: center;
     padding: 0 0;
-    margin: 40px 20px 0;
+    margin: 0px 30px 40px;
   }
   .title h1{font-size: 60px;}
   .title h3{font-size: 26px;}
 
-  .slider-wrapper{margin-top: 50px;}
-
-  .slide  img{
+  .slider-wrapper{
+    position: relative;
+    margin-top: 0 auto;
+    width: 100%;
+    height:250px;
+  }
+  .slide img{
     box-shadow: 0px 15px #0E3101;
   }
-
   .slider-nav__label {
     bottom:0px;
     top:-300px;
@@ -1057,12 +1054,17 @@ margin-left: 20px;
     width:0.7em;
     height: 0.7em;
   }
+  button{
+    font-size: 18px;
+    width: 120px;
+    }
 
   /*----ABOUT----*/
   .center-title{
     text-align: center;
     padding: 40px 50px 0;
   }
+  .center-title p{font-size: 20px;}
   .center-body, .right-body{
     display: flex;
     padding: 0;
@@ -1077,12 +1079,14 @@ margin-left: 20px;
   }
 
   .center-body p,.right-body p{
-    padding: 50px 70px 20px;
+    padding: 50px 50px 20px;
     text-align: center;
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0px;
+
   }
-  .mission{
-    padding: 20px 0px 50px;
-  }
+  .mission{padding: 20px 0px 50px;}
   .mission h4{font-size: 26px; padding-bottom:0px}
 
   .mission-icons li p{
@@ -1091,46 +1095,53 @@ margin-left: 20px;
     justify-content: center;
     position: relative;
     margin-left: 15px;
+    font-size: 16px;
   }
 
   .bg,.bg-about{
     background-image: url('Images/bg-about-pic2.png')}
   .bg-main{
     background-image: url('Images/bg-about-pic3.png')}
- 
+
   /*----CAMPAIGN----*/
   /*--nav tab content--*/
   .campaign-content{margin:0px;}
 
-.campaign-tabs label{
-  font-weight: 400;
-  font-size:16px;
-	display: block;
-	float: left;
-	cursor: pointer;
-	width: 100px;
-	padding: 10px;
-	border-radius: 10px;
-	background: #BFE0C2;
-	color: #727473;
-	text-align: center;
-	line-height: 1;
-	transition: .3s ease-in-out;
-}
-  #search{
+  .campaign-tabs label{
+    font-weight: 400;
+    font-size:16px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #BFE0C2;
+    color: #727473;
+    text-align: center;
+    line-height: 1;
+    transition: .3s ease-in-out;
+  }
+  #search,.select{
     font-size:12px;
     margin-right: 20px;
-    margin-left:10px;
+    margin-left:20px;
+  }
+  .search-bar{flex-direction: column;}
+  #search{margin-top:30px;}
+  select{padding: .5em 0.5em;}
+  .select{
+    justify-content: space-between;
+    margin-top:10px;
   }
 
-  #search,.select{margin-top:30px;}
-  select{padding: 0.3em 0.5em;}
   .sort::after,.filter::after {font-size:7px;}
   .art img{ width: 100%;}
 
   .article{
   justify-content: space-around;
-    margin: 10px 0 0px;
+   margin: 0px 0 0px;
+   
   }
   .article h5{font-size: 16px;
   padding-bottom:0;}
@@ -1139,11 +1150,11 @@ margin-left: 20px;
     margin: 15px 2px;
     padding-left: 10px;
     padding-right: 10px;
-    width: 70%;
+    width: 100%;
   }
-  .art h5{
-    font-size: 25px; 
-  }
+  .art h5{font-size: 25px;}
+  .art p{font-size: 16px;}
+  .butn{font-size: 16px;}
 
   /*--DONATE+VOLUNTEER*/
   form{
@@ -1152,19 +1163,19 @@ margin-left: 20px;
     margin: 0;
     box-shadow: 0px 15px #C99B04;
   }
+  .fill{font-size: 16px;}
   .contain{
     display: flex;
     flex-direction: column;
     text-align:center;
     margin:0px;
-   
   }
-
   .content{
     padding-top: 0;
     padding-bottom: 40px;
-     margin: 30px;
+    margin: 50px;
   }
+  .content p{font-size: 16px;}
   .register,.don{
       width: 90%;
     margin: 0 auto;
@@ -1178,7 +1189,8 @@ margin-left: 20px;
     margin-bottom: 50px;}
 
   .why-title, .how-title {text-align: center;}
-  .why-title h5, .how-title h5 {font-size: 20px;}
+  .why-title h5, .how-title h5 {font-size: 1.3em;}
+  .why-title p, .how-title p{font-size: 16px;}
   /*remove <br>*/
   .how-title br:nth-child(6), 
   .how-title br:nth-child(7){
@@ -1193,9 +1205,6 @@ margin-left: 20px;
   .donate-content{flex-direction: column;}
   .fill-in{
     margin: 50px 30px 30px;}
-  
-
-
 
  /*----FOOTER----*/
   .footer{
@@ -1203,6 +1212,9 @@ margin-left: 20px;
     flex-direction: column;
     text-align: center;
   }
+
+  .footer h3{font-size: 16px;}
+  .footer p{font-size: 13px;}
   .contact,.address{
     padding-bottom:30px;
   }
@@ -1218,7 +1230,7 @@ h1{
   font-weight: 700;
   font-style: normal;
   color: #337146;
-  font-size: 80px;
+  font-size: 7em;
   margin:none;
   padding-top:10px;
 
@@ -1229,7 +1241,7 @@ h2{
   font-weight: 700;
   font-style: normal;
   color: #004105;
-  font-size: 60px;
+  font-size: 4em;
   margin:none;
   padding-bottom:20px;
 }
@@ -1238,7 +1250,7 @@ h3{
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size:26px;
+  font-size:40px;
 }
 
 h4{
@@ -1246,7 +1258,7 @@ h4{
   font-weight: 700;
   font-style: normal;
   color: black;
-  font-size: 30px;
+  font-size: 2.5em;
   margin-top:40px;
   text-align: center;
 
@@ -1257,14 +1269,14 @@ h5{
   font-weight: 500;
   font-style: normal;
   color: black;
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 h6{
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size:26px;
+  font-size:2em;
   color: #337146;
 }
 p {
@@ -1272,7 +1284,7 @@ p {
   font-family: futura-pt, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2em;
 }
 
