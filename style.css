@@ -411,8 +411,7 @@ select::-ms-expand{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
-  margin: 40px 20px 0px;
-  right:0;
+  padding: 40px 20px;
   
 }
 .article img{
@@ -455,24 +454,20 @@ select::-ms-expand{
 
 /*--DONATE+VOLUNTEER*/
 .content{
-  padding-top: 30px;
   flex-direction: column;
   grid-area: title;
-  left:20px;
 }
 .contain{
   grid-area: 2/1/2/7;
   display: flex;
-  margin: 100px 0;
-  padding: 0 100px;
+  margin: 150px;
 }
 /* forms in volunteer and donate*/
 form{
   background-color:#E4CD82;
   grid-area: image;
   height: 100%;
-  width:80%;
-  margin-top: 30px;
+  width:100%;
   margin-left: 100px;
   border-radius: 25px;
   border: 3px solid #F9C209;
@@ -482,8 +477,8 @@ form{
 .btn{
   background-color:#004105;
   position: relative;
-  width: 80px;
-  height: 35px;
+  width: 100px;
+  height: 50px;
   color:white;
   border:none;
   display:flex;
@@ -516,7 +511,8 @@ form{
 .register p,.don p{
   text-align: center;
   font-size: 18px;
-  padding-top:5px;
+  padding: 5px 10px 0;
+
 }
 .register .fill-in{
  margin-top: 50px;
@@ -526,8 +522,8 @@ form{
 .or p {
   display: flex;
   flex-direction: row;
-  margin: 20px 30px;
-  font-size: 18px;
+  margin: 20px 50px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -546,13 +542,13 @@ form{
 }
 /* "Join us with"*/
 .or h4{
-  font-size: 18px;
+  font-size:24px;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   position: relative;
-  top: 10px;
   margin-bottom: 10px;
 }
+.register > .icons{margin-bottom: 40px;}
 
 /* Social media Icons -center*/
 .icons{
@@ -572,16 +568,16 @@ ion-icon {
 ion-icon:hover{opacity: 0.7;}
 
 /*----DONATE----*/
-/* one-time giving or monthly giving*/
 .don{
-  height: 90%;
-  width:70%;
+  width:80%;
 }
 
+/* one-time giving or monthly giving*/
+
 .samp{
-  margin:40px;
+  margin-top:40px;
   display:flex;
-  justify-content: space-evenly; /*center*/
+  justify-content: center; /*center*/
   align-items: center;
   align-content: center;
   background-color:#E4CD82;
@@ -619,7 +615,6 @@ ion-icon:hover{opacity: 0.7;}
   align-content: center;
   background-color:#E4CD82;
   position: relative;
-  top:-30px;
   border-radius: 10px;
   margin: 5px;
  flex-wrap:wrap; 
@@ -684,16 +679,14 @@ input[type=number] {
 }
 
 /* contact + card details */
+
 .fill-in{
-  margin-top: 30px ;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+  margin: 50px 50px 30px;
 }
 .fill-in .btn{margin-top: 20px;}
+
 /* form fill-in */
 .fill{  
-  margin:0 40px ;
   margin-bottom: 10px;
   height: 40px;
   width:100%;
@@ -702,7 +695,7 @@ input[type=number] {
 
 .fill input{ /* value key in*/
   height:25px; /*adjust height between input and border bottom*/
-  width:80%;
+  width:100%;
   border:none;
   font-size: 18px;
   border-bottom: 2px solid black;
@@ -728,26 +721,20 @@ input[type=number] {
   -webkit-outline-style: none;
   -oz-outline-style: none;
 }
-
+.info{
+  margin-bottom: 30px;
+}
 .card{
   display:flex; /*split between #card-number and (#expired + #cvv)*/
-  justify-content: space-between;
+
 }
 .card-details{
   display: flex;
-  margin-right: 30px;
-  padding-left: 10px;
-  justify-content: center;
 }
-.card-details .fill{
-  margin: 0;
+.card-details > .fill{
+margin-left: 20px;
 }
-#Name, #cont, #mail, #fullName, #contact,
-#email, #card-name, #card-number, #cvv, #expired{
-  position: relative;
-  float:left;
-}
-#card-number{width: 120%;}
+
 
 
 /*---FOOTER---*/
@@ -982,11 +969,6 @@ input[type=number] {
     font-size:10px;
     left:-20px;
   }
-
-  .article{
-    justify-content: space-around;
-    margin: 30px 0 0px;
-  }
   .article h5{font-size: 26px;}
   .art img{width: 100%;}
   .art{
@@ -1011,7 +993,6 @@ input[type=number] {
   }
 
   .content{
-    padding-top: 20px;
     padding-bottom: 40px;
   }
 
@@ -1030,11 +1011,8 @@ input[type=number] {
     display:flex;
     flex-direction: column;
   }
-  .donate-content div{
-    text-align: left;
-  }
-  .content img{width: 100%;}
-  .don .btn{margin-bottom: 30px;}
+  .don > .btn{margin-bottom: 30px;}
+
 }
 
 /*----PHONE----*/
@@ -1170,26 +1148,28 @@ input[type=number] {
   /*--DONATE+VOLUNTEER*/
   form{
     height: 100%;
-    width:115%;
-    position: relative;
-    justify-content: center;
-    left: -30px;
-    margin-left:0;
-    padding-left: 0;
+    width:90%;
+    margin: 0;
     box-shadow: 0px 15px #C99B04;
   }
   .contain{
     display: flex;
     flex-direction: column;
     text-align:center;
-    padding: 0 50px ;
+    margin:0px;
+   
   }
 
   .content{
     padding-top: 0;
     padding-bottom: 40px;
+     margin: 30px;
   }
-
+  .register,.don{
+      width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    }
   /*----VOLUNTEER----*/
   .list{flex-direction: column;}
 
@@ -1204,19 +1184,17 @@ input[type=number] {
   .how-title br:nth-child(7){
     display:none;
   }
-
+  
   /* register form in volunteer page*/
   .register .icons{margin-bottom: 30px;}
 
   /*---DONATE---*/
   .content img{width: 100%;}
   .donate-content{flex-direction: column;}
-  .donate-content div{text-align: center;}
-  .don{
-    width: 115%;
-  margin: 0 auto;
+  .fill-in{
+    margin: 50px 30px 30px;}
+  
 
-  }
 
 
  /*----FOOTER----*/
@@ -1269,7 +1247,7 @@ h4{
   font-style: normal;
   color: black;
   font-size: 30px;
-  margin-top:20px;
+  margin-top:40px;
   text-align: center;
 
 }
