@@ -356,7 +356,7 @@ button:hover,.button:hover {
   border-radius: 15px;
   border: 2px solid #F9C209;
   flex:3; /*expand search bar*/
-  font-size:12px;
+  font-size:16px;
   margin-right: 20px;
   margin-left:40px;
 }
