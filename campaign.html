@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Solar Citizens - Campaigns</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+    <link rel="icon" size="192x192" href="Images/apple-touch-icon.png">
+  </head>
+  
+  <body class="grid-container" style="background-color:#FDFADD">
+    <!-- no green part in background to focus on the campaigns-->
+    <header>  
+      <input id="nav-toggle" type="checkbox">
+      <label for="nav-toggle" class="icon-burger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+    
+      <img class="logo"src="Images/logo.png" alt="logo">
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li class="active"><a href="campaign.html">Our Campaigns</a></li>
+        <li><a href="#">Contact</a></li>
+        <div class="cta">
+        <li class="button"><a href="volunteer.html">Volunteer</a></li>
+        <li class="button"><a href="donate.html">Donate</a></li></div>
+      </ul>     
+    </header>
+
+  
+  <main class="content-center"> <!--body-->
+    <div class="center-title">
+      <h2> Our campaigns</h2>
+      <p>One of our highlighted activities is our campaigns to support or go against various government proposals in relation to solar energy. These campaigns run all for the benefit of us, the Solar Citizens. They are the reason why we need your generous donations. You can check out our current, successful and all campaigns to understand more about what, how and why we run them.</p>
+    </div> <!--.center-title-->
+    
+    <div class="campaign-tabs">
+      <div class="tabs">
+        <input type="radio" name="campaign" id="current" value="1" checked="checked" >
+        <label for="current">Current</label>
+      </div> <!--.tabs-->
+
+      <div class="tabs">
+        <input type="radio" name="campaign" id="success" value="2">
+        <label for="success">Success</label>
+      </div><!--.tabs-->
+
+      <div class="tabs">
+        <input type="radio" name="campaign" id="all" value="3">
+        <label for="all">All</label>
+      </div><!--.tabs-->
+    </div> <!--.campaign-tabs-->
+
+    <div class="campaign-content">
+     <div class="search-bar">
+        <input type="text" name="search" id="search" placeholder="Search campaign">
+      <div class="select">
+        <div class="sort">
+          <select>
+            <option selected disabled>Sort</option>
+            <option value="">A-Z</option>
+            <option value="">Most recent</option>
+            <option value="">Least recent</option>
+            <option value="">Most visited</option>
+          </select>
+        </div> <!--.sort-->
+        <div class="filter">
+          <select>
+            <option selected disabled>Filter</option>
+            <option value="">Location</option>
+            <option value="">Date</option>
+          </select>
+        </div> <!--.filter-->
+      </div> <!--.select-->
+     </div><!--.search-bar-->
+
+    <div class="article">
+      <div class="art">
+        <img src="Images/art1.png">
+        <h5>Supercharge ARENA</h5>
+        <p>The Australian Renewable Energy Agency (ARENA) is set to run out of funding within a year, threatening the future of clean energy in Australia. There is also a risk that the Government won't fund ARENA unless they can change the rules to allow ARENA to invest in fossil fuels. </p>
+        <button onclick="location.href='https://www.solarcitizens.org.au/supercharge_arena'"class="butn">More</button>
+      </div>
+      <div class="art">
+        <img src="Images/art2.png">
+        <h5>Stop the Sun Tax</h5>
+        <p>Right now the Australian Energy Market Commission (AEMC) is considering a proposal for charging solar owners to export to the grid – in effect, taxing the sun. We're calling on the AEMC to reject proposals that would allow blanket exporting fees to be slapped on solar owners. </p>
+        <button onclick="location.href='https://www.solarcitizens.org.au/stop_the_sun_tax'"class="butn">More</button>
+      </div>
+      <div class="art">
+        <img src="Images/art3.png">
+        <h5>Save Clean Energy</h5>
+        <p>Now that the national Renewable Energy Target (RET) is met, projections show that over the next few years renewable energy investment will dry up and the number of new solar and wind projects under construction will fall off a cliff – risking thousands of jobs and billions in investment. </p>
+        <button onclick="location.href='https://www.solarcitizens.org.au/save_clean_energy'"class="butn">More</button>
+      </div>
+      <div class="art">
+        <img src="Images/art4.png">
+        <h5>Save ARENA</h5>
+        <p>The Australian Renewable Energy Agency (ARENA) was under threat - again. The Federal Government planned to strip $1 billion in funding from ARENA in an 'Omnibus Bill'.</p>
+        <button onclick="location.href='https://www.solarcitizens.org.au/savearena'"class="butn">More</button>
+      </div>
+      <div class="art">
+        <img src="Images/art5.png">
+        <h5>Vote 1 Solar</h5>
+        <p>We're calling on all Australian political parties and candidates to commit to 100% renewable power by 2030. The orderly transition means a better, fairer power system and lower electricity bills for everyone.</p>
+        <button onclick="location.href='https://www.solarcitizens.org.au/qld_election'"class="butn">More</button>
+      </div>
+      <div class="art">
+          <img src="Images/art6.png">
+          <h5>Queensland Election</h5>
+          <p>Queensland goes to the polls on November 25 and this election we have a choice: take Queensland on the path to a clean energy future, or get stuck in the past with expensive, polluting coal-fired power.</p>
+          <button onclick="location.href='http://www.capturethesun2030.com/#about'"class="butn">More</button>
+        </div>
+
+    </div> <!--article-->
+  </main>
+
+  <footer class="footer">
+    <div class="address">
+      <h3>Address</h3>
+      <p>1/377 Montague Rd,<br>
+        West End, <br>
+        QLD 4101</p>
+    </div>
+
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>+61 284 057 996<br>
+         info@solarcitizens.org.au </p>
+    </div>
+    <div class="icons">
+      <ul>
+        <li><a href="https://www.facebook.com/solarcitizens/"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/solar_citizens/"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
+        <li><a href="https://www.twitter.com/solarcitizens"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
+        <li><a href="https://www.youtube.com/channel/UCfeseQT7oxPXnByJETGnZJQ"><ion-icon name="logo-youtube" size="large"></ion-icon></a></li>
+    </div></footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
+  </body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Solar Citizens - Donate</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+    <link rel="icon" size="192x192" href="Images/apple-touch-icon.png">
+  </head>
+  
+  
+  <body class="grid-container">
+    <div class="bg"></div>
+    <header>  
+      <input id="nav-toggle" type="checkbox">
+      <label for="nav-toggle" class="icon-burger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+    
+      <img class="logo"src="Images/logo.png" alt="logo">
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="campaign.html">Our Campaigns</a></li>
+        <li><a href="#">Contact</a></li>
+        <div class="cta">
+        <li  class="button"><a href="volunteer.html">Volunteer</a></li>
+        <li  class="button"><a  class="active"href="donate.html">Donate</a></li></div>
+      </ul> 
+    </header>
+
+    <main class="contain">
+      <div class="content">
+        <h2>Donate</h2>
+        <div class="donate-content">
+          <p>When you donate to Solar Citizens, you're supporting an organisation dedicated to growing and protecting solar in Australia.We are completely independent and do not accept any government money. Instead, we rely on the generosity of supporters like you to power our work.</p><br>
+          <p>Every dollar you donate goes towards protecting the rights of solar owners and campaigning for an Australia powered by clean energy from the sun.</p><br><br>
+        </div>
+        <figure><img src="Images/donate.jpg" alt="donate" width="90%"></figure>  
+      </div>
+
+      <form class="don">
+        <h4>Donate</h4>
+        <p>Your donation helps us getting closer to a renewable Australia</p>
+        <div class="samp"> <!--for "onetime giving/monthly giving-->
+          <input type="radio" name="s2" id="on" value="1" checked="">
+          <label for="on" >One-time giving</label>
+          <input type="radio" name="s2" id="off" value="0">
+          <label for="off">Monthly giving</label>
+        </div> <!--.samp-->
+        <div class="amount">
+          <div class="sample"> <!--for amount chosen--> 
+            <input type="radio" name="s3" id="select1" value="1" >
+            <label for="select1">$5</label>
+            <input type="radio" name="s3" id="select2" value="2">
+            <label for="select2">$10</label>
+            <input type="radio" name="s3" id="select3" value="3">
+            <label for="select3">$20</label>
+            <input type="radio" name="s3" id="select4" value="4">
+            <label for="select4">$50</label>
+          </div><!--.sample-->
+          <div class ="own"> <!--for when users want to key in their own chosen amount-->
+            <input type="number"  name="own"placeholder="Other">
+          </div> <!--.own-->
+        </div><!--.amount-->
+
+        <div class="fill-in">
+          <div class="info"> <!-- contact info-->
+            <div class="fill">
+              <input type="text" name="fullName" id="fullName" required>
+              <label for="fullName">Full Name</label>
+            </div>
+            <div class="fill">
+              <input type="tel" name="contact" id="contact" required>
+              <label for="contact">Contact</label>
+            </div>
+          
+            <div class="fill">
+              <input type="text" name="email" id="email" required>
+              <label for="email">Email Address</label>
+            </div>
+          </div> <!--.info-->
+          <div class="fill">
+            <input type="text" name="card-name" id="card-name" required>
+            <label for="card-name">Name on card</label>
+          </div>
+          <div class="card"> <!--card info--> <!--to display:flex card no, expiry date, cvv-->
+            <div class="fill">
+              <input type="tel" name="card-number" id="card-number" required>
+              <label for="card-number">Card number</label>
+            </div>
+            <div class="card-details"> <!--to split between expiry date and cvv-->
+              <div class="fill">
+                <input type="tel" name="expired" id="expired" required>
+                <label for="expired">Expiry</label>
+              </div>
+              <div class="fill">
+                <input type="tel" name="cvv" id="cvv" required>
+                <label for="cvv">CVV</label>
+              </div>
+            </div><!--.card-details-->
+          </div><!--card-->
+          <input type="submit" class="btn" value="Donate">   
+        </form>
+      </main>
+    
+    <footer class="footer">
+      <div class="address">
+        <h3>Address</h3>
+        <p>1/377 Montague Rd,<br>
+          West End, <br>
+          QLD 4101</p>
+      </div>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>+61 284 057 996<br>
+          info@solarcitizens.org.au </p>
+      </div>
+      <div class="icons">
+        <ul>
+          <li><a href="https://www.facebook.com/solarcitizens/"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/solar_citizens/"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
+          <li><a href="https://www.twitter.com/solarcitizens"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
+          <li><a href="https://www.youtube.com/channel/UCfeseQT7oxPXnByJETGnZJQ"><ion-icon name="logo-youtube" size="large"></ion-icon></a></li>
+      </div>
+    </footer>
+   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  
+  </body>
+
+</html>
