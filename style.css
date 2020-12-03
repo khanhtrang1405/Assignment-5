@@ -907,10 +907,11 @@ margin-left: 20px;
   /*----ABOUT----*/
   .center-title{padding: 40px 150px 0;}
 
-  .center-body, .right-body{
+  .center-body{
     flex-direction: column;  
     margin-top: 50px;
-    padding:0 150px 0;
+    padding: 0 0 0;
+    
   }
 
   .right-body{
@@ -918,12 +919,13 @@ margin-left: 20px;
     margin-top: 0;
     padding:0 150px 0;
   }
-
+  .left-image{width: 70%}
+  .right-image{width: 100%;}
   .left-image, .right-image{
     box-shadow: 0 15px #0E3101;
     left:0px;
   }
-  .left-image,.right-image{width: 100%}
+
 
   /*keep all text center*/
   .center-body p{
